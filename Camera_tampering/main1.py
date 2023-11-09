@@ -25,7 +25,7 @@ while(True):
             if bounding_rect[i][2] >=40 or bounding_rect[i][3] >=40:
                 a = a+(bounding_rect[i][2])*bounding_rect[i][3]
             if(a >=int(frame.shape[0])*int(frame.shape[1])/3):
-                cv2.putText(frame,"TAMPERING DETECTED",(5,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),2)   
+                cv2.putText(frame,"TAMPERING DETECTED",(250,250),cv2.FONT_ITALIC,3,(0,0,255),3)   
             cv2.imshow('frame',frame)        
                
     k = cv2.waitKey(30) & 0xff
